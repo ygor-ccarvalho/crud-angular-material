@@ -1,0 +1,21 @@
+.container{
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.full-row {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .full-row {
+    grid-template-columns: 1fr;
+  }
+}

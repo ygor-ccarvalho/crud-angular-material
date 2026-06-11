@@ -1,13 +1,19 @@
-<mat-toolbar color="primary">
+<mat-toolbar>
+  <button matIconButton display="none">
+    <mat-icon>menu</mat-icon>
+  </button>
+
   <span>Cadastro de Clientes</span>
   <span class="spacer"></span>
+
   <a routerLink="/cadastro">
-    <mat-icon fontIcon="feed"></mat-icon>
-    Formulário
+    <mat-icon fontIcon="feed">Cadastro</mat-icon>
+  
   </a>
+
   <a routerLink="/consulta">
-    <mat-icon fontIcon="search"></mat-icon>
-    Consulta
+    <mat-icon fontIcon="search">Consulta</mat-icon>
+
   </a>
 
 </mat-toolbar>
