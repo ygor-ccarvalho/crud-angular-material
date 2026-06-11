@@ -1,15 +1,26 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroupDirective, NgForm, Validators, FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
+import { FormControl, Validators, FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterLink } from "@angular/router";
+import { NgxMaskDirective, provideNgxMask} from "ngx-mask"
 
 @Component({
   selector: 'app-cadastro',
-  imports: [MatCardModule, MatFormFieldModule, MatInputModule, MatSelectModule, FormsModule, ReactiveFormsModule, MatButtonModule, RouterLink],
+  imports: [MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    RouterLink,
+    NgxMaskDirective],
+  
+  providers:[provideNgxMask({})],
 
   templateUrl: './cadastro.html',
   styleUrl: './cadastro.scss',
